@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/bootstrap.css')
+  body
+    div
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href='/registration') Register
+            li.nav-item
+              a.nav-link(href='/login') Login
+            li.nav-item
+              a.nav-link(href='/profile') Profile
+      .landing
+        .overlay
+          .form
+            .div-username #{message}

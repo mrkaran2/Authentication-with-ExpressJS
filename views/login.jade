@@ -1,0 +1,28 @@
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/bootstrap.css')
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='/registration') Register
+          li.nav-item
+            a.nav-link(href='/login') Login
+          li.nav-item
+            a.nav-link(href='/profile') Profile
+    div
+      .landing
+        .overlay
+          .form
+            form(method='POST', action='/logged')
+              .form-group
+                label(for='exampleInputEmail1') Username
+                input#exampleInputEmail1.form-control(pattern='.{5,10}', required='', title='5 to 10 characters', type='username', name='username', placeholder='Enter username')
+              .form-group
+                label(for='exampleInputPassword1') Password
+                input#exampleInputPassword1.form-control(pattern='.{5,10}', required='', title='5 to 10 characters', type='password', name='pwd', placeholder='Enter Password')
+              br
+              button.btn.btn-primary(type='submit', value='Submit') Submit
