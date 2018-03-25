@@ -4,6 +4,7 @@ This project uses NodeJS, ExpressJS and Mongoose to illustrate working of user s
 # Setup Instructions
 - Paste this code into your terminal - `git clone git@github.com/mrkaran2/User-session-and-authentication-with-ExpressJS.git`
 - `cd` into `User-session-and-authentication-with-ExpressJS` and run `npm install`
+- Start the mongodb server using the command `mongod` where the users' details are stored
 - Run the node.js server using the command `node main.js`
 - Open `localhost:9999` in your browser
 
